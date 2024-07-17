@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cbt.css" />
+  </head>
+  <body>
+    <div class="main-div" id="quizDiv">
+      <h1>CSS Quiz</h1>
+      <p>you have 40 secs to answer all questions</p>
+      <div class="h-tdiv">
+        <h3 id="head"></h3>
+        <p id="timming"></p>
+      </div>
+      <div id="qa">
+        <p id="quest"></p>
+        <form>
+          <input type="radio" id="ans1" name="fav_language" value="HTML" />
+          <label for="ans1" id="label1"></label><br />
+          <input type="radio" id="ans2" name="fav_language" value="CSS" />
+          <label for="ans2" id="label2"></label><br />
+          <input
+            type="radio"
+            id="ans3"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="ans3" id="label3"></label>
+        </form>
+        <div class="btn-div">
+          <div class="p-n-btn">
+            <button onclick="prev()">Previous</button>
+            <button onclick="next()">Next</button>
+          </div>
+          <div class="s-btn">
+            <button onclick="subMit()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="timeUp">
+      <h1 class="timeh">YOUR TIME IS UP. THANK YOU FOR TAKING THE QUIZ</h1>
+    </div>
+    <script src="cbt.js"></script>
+  </body>
+</html>
